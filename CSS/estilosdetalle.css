@@ -1,0 +1,103 @@
+/* estilo para los link a  Y PARA QUE NO SE VEA LA LINEA DE ABAJO COMO SI FUERA UN ENLACE 
+PARA ESO SIRVE */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ====== Estilo para sección de detalle de servicio ====== */
+#detalle-servicio {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.servicio-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.servicio-detalle .texto {
+  flex: 1 1 55%;
+}
+
+.servicio-detalle .imagen {
+  flex: 1 1 40%;
+}
+
+.servicio-detalle .imagen img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Botón naranja con ícono */
+.btn-llamar {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-llamar:hover {
+  background-color: darkorange;
+}
+
+/* ====== Formulario de contacto en servicios ====== */
+.formulario-contacto-servicio {
+  border: 1px solid var(--secundario);
+  border-radius: 12px;
+  background-color: var(--fondo);
+  padding: 30px;
+}
+
+.formulario-contacto-servicio h3 {
+  color: var(--principal);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formulario-contacto-servicio form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto-servicio input,
+.formulario-contacto-servicio textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.formulario-contacto-servicio button {
+  background-color: var(--secundario);
+  color: #000;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-contacto-servicio button:hover {
+  background-color: #9ddfbc;
+  color: white;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .servicio-detalle {
+    flex-direction: column;
+  }
+}
