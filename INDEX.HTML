@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body id="body-parainicio">
-  <header>
+<header id="encabezado-clinica">
+  <div class="contenedor-header">
     <img src="IMAGENES/CLINICA-LOGO.avif" alt="CLÍNICA LIMASURE" class="logo" />
-    <h1>CLÍNICA LIMASURE</h1>
-    <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
-    <nav>
+    <div class="info-header">
+      <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
+      <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
+    </div>
+    <nav class="navegacion-clinica">
       <ul>
         <li><a href="INDEX.HTML">Inicio</a></li>
         <li><a href="quienes somos.html">Quiénes Somos</a></li>
@@ -22,65 +25,62 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Tu salud en manos seguras</h2>
-        <p>En Clínica Limasure, ofrecemos atención médica confiable, humana y accesible para todos.</p>
-        <a href="quienes somos.html" class="btn">Conócenos</a>
-      </div>
-    </section>
 
-    <section class="destacados">
-      <div class="card">
-        <h3>Visión</h3>
-        <p>Ser una clínica líder en Lima Sur, reconocida por su innovación, calidad y calidez humana.</p>
-      </div>
-      <div class="card">
-        <h3>Compromiso</h3>
-        <p>Nos dedicamos a mejorar vidas a través de una atención médica integral y cercana.</p>
-      </div>
-      <div class="card">
-        <h3>Confianza</h3>
-        <p>Tu bienestar es nuestra prioridad. Con nosotros, estás en buenas manos.</p>
-      </div>
-    </section>
+<main id="contenido-principal">
 
-    <section class="galeria-cascade">
-      <img src="IMAGENES/P-MAFRESEGUROS.png" alt="Instalaciones modernas">
-      <img src="IMAGENES/P-SYNLAB.webp" alt="Atención personalizada">
-      <img src="IMAGENES/P-ESALUD.png" alt="Tecnología médica">
-    </section>
+  <!-- HERO EN UNA SOLA FILA -->
+  <section class="fila-hero">
+    <div class="hero-column">
+      <h2>Tu salud en manos seguras</h2>
+      <p>En Clínica Limasure, ofrecemos atención médica confiable, humana y accesible para todos.</p>
+      <a href="quienes somos.html" class="btn">Conócenos</a>
+    </div>
+    <div class="hero-img">
+      <img src="IMAGENES/CLINICA-LOGO.avif" alt="Logo institucional">
+    </div>
+  </section>
 
-    <section class="testimonios">
-      <h3>Testimonios de nuestros pacientes</h3>
-      <div class="testimonial">
-        <p>"La atención fue excelente, me sentí muy bien acompañado en todo momento."</p>
-        <strong>- María Rodríguez</strong>
-        <div class="estrellas">⭐⭐⭐⭐⭐</div>
-      </div>
-      <div class="testimonial">
-        <p>"Un equipo profesional y humano. Volvería sin dudarlo."</p>
-        <strong>- Luis Gutiérrez</strong>
-        <div class="estrellas">⭐⭐⭐⭐⭐</div>
-      </div>
-    </section>
+  <!-- VALORES EN TRES COLUMNAS -->
+  <section class="fila-3col">
+    <article class="card">
+      <h3>Visión</h3>
+      <p>Ser una clínica líder en Lima Sur, reconocida por su innovación, calidad y calidez humana.</p>
+    </article>
+    <article class="card">
+      <h3>Compromiso</h3>
+      <p>Nos dedicamos a mejorar vidas a través de una atención médica integral y cercana.</p>
+    </article>
+    <article class="card">
+      <h3>Confianza</h3>
+      <p>Tu bienestar es nuestra prioridad. Con nosotros, estás en buenas manos.</p>
+    </article>
+  </section>
 
-    <section class="cita">
-      <blockquote>“La salud es el primer paso hacia una vida plena.”</blockquote>
-    </section>
+  <!-- GALERÍA EN UNA FILA -->
+  <section class="fila-galeria">
+    <img src="IMAGENES/P-MAFRESEGUROS.png" alt="Instalaciones modernas">
+    <img src="IMAGENES/P-SYNLAB.webp" alt="Atención personalizada">
+    <img src="IMAGENES/P-ESALUD.png" alt="Tecnología médica">
+  </section>
 
-    <section class="alianzas">
-      <h3>Nuestros aliados en salud</h3>
-      <div class="logos">
-        <img src="IMAGENES/P-MAFRESEGUROS.png" alt="Centro médico aliado 1">
-        <img src="IMAGENES/P-SYNLAB.webp" alt="Centro médico aliado 2">
-        <img src="IMAGENES/P-ESALUD.png" alt="Centro médico aliado 3">
-      </div>
-    </section>
-  </main>
+  <!-- TESTIMONIOS EN DOS COLUMNAS -->
+  <section class="fila-2col">
+    <article class="testimonio-box">
+      <p>"La atención fue excelente, me sentí muy bien acompañado en todo momento."</p>
+      <strong>- María Rodríguez</strong>
+      <div class="estrellas">⭐⭐⭐⭐⭐</div>
+    </article>
+    <article class="testimonio-box">
+      <p>"Un equipo profesional y humano. Volvería sin dudarlo."</p>
+      <strong>- Luis Gutiérrez</strong>
+      <div class="estrellas">⭐⭐⭐⭐⭐</div>
+    </article>
+  </section> 
+
+</main>
 
   <footer>
     <p>&copy; 2025 CLÍNICA LIMASURE | Un proyecto de Antony Celestino Abad y Sergio Mamani Orihuela |
