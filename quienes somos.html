@@ -2,45 +2,50 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiénes Somos - CLÍNICA LIMASURE</title>
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/estilosdetalle.css">
+  <link rel="stylesheet" href="CSS/estiloquienesomos.css">
 </head>
-<body>
-<header id="encabezado-clinica">
-  <div class="contenedor-header">
-    <a href="index.html">
+<body id="body-quienes-somos">
+<header id="encabezado-clinica" class="contenedor-header">
+  <a href="index.html" class="logo-link">
     <img src="IMAGENES/CLINICA-LOGO.avif" alt="CLÍNICA LIMASURE" class="logo" />
-    </a>
-    <div class="info-header">
-      <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
-      <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
-    </div>
-    <nav class="navegacion-clinica">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="quienes somos.html">Quiénes Somos</a></li>
-        <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+  </a>
+  <div class="info-header">
+    <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
+    <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
   </div>
+  <nav class="navegacion-clinica">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes somos.html">Quiénes Somos</a></li>
+      <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
-
-  <main>
+<main id="contenido-quienes-somos">
+  <section class="introduccion">
     <h2>Quiénes Somos</h2>
     <p>En <strong>CLÍNICA LIMASURE</strong>, creemos en una atención médica humana, accesible y con calidez. Somos una clínica comprometida con brindar servicios de salud de calidad para las familias del sur de Lima, con tecnología moderna y un enfoque centrado en el bienestar del paciente.</p>
+  </section>
 
-    <section>
+  <section class="mision-vision-valores">
+    <article class="card-detail">
       <h3>Misión</h3>
       <p>Ofrecer atención médica confiable y accesible, con un equipo comprometido en mejorar la calidad de vida de nuestros pacientes mediante servicios integrales, trato humano y tecnología actualizada.</p>
+    </article>
 
+    <article class="card-detail">
       <h3>Visión</h3>
       <p>Ser reconocidos como la clínica líder del sur de Lima por nuestra excelencia médica, compromiso social y mejora continua en el servicio de salud.</p>
+    </article>
 
+    <article class="card-detail">
       <h3>Valores</h3>
       <ul>
         <li>Compromiso con la salud</li>
@@ -49,29 +54,89 @@
         <li>Innovación tecnológica</li>
         <li>Trabajo en equipo</li>
       </ul>
-    </section>
+    </article>
+  </section>
 
-    <section class="equipo">
-      <h3>Equipo Fundador</h3>
+  <section class="equipo-fundador">
+    <h3>Equipo Fundador</h3>
+    <div class="equipo-content">
       <ul>
         <li><strong>Antony Celestino Abad</strong> – Cofundador y Coordinador General</li>
         <li><strong>Sergio Samuel Abraham Mamani Orihuela</strong> – Cofundador y Desarrollador del Proyecto</li>
       </ul>
-      <img src="IMAGENES/P-EQUIPOFUNDADOR.jpg" alt="Foto del equipo fundador de LIMASURE" class="img-equipo" />
-    </section>
+      <img src="IMAGENES/equipofundador.jpeg" alt="Foto del equipo fundador de LIMASURE" class="img-equipo" />
+    </div>
+  </section>
 
-    <section class="certificaciones">
-      <h3>Nuestras Aspiraciones</h3>
-      <ul>
-        <li>Implementación de estándares de calidad en atención médica</li>
-        <li>Desarrollo de un sistema digital para gestión clínica</li>
-        <li>Enfocados en la mejora continua y sostenibilidad</li>
-      </ul>
-    </section>
+  <section class="aspiraciones">
+    <h3>Nuestras Aspiraciones</h3>
+    <ul>
+      <li>Implementación de estándares de calidad en atención médica</li>
+      <li>Desarrollo de un sistema digital para gestión clínica</li>
+      <li>Enfocados en la mejora continua y sostenibilidad</li>
+    </ul>
+  </section>
+
+  <section class="proposito-section">
+    <h2 class="proposito-titulo">Cuidando con propósito: Las personas al centro de todo lo que hacemos</h2>
+
+    <div class="proposito-grid">
+        <article class="proposito-card">
+            <span class="proposito-icon">&#x2695;</span> <h4>Nos hacemos cargo</h4>
+            <p><strong>Juntos creamos nuestro futuro.</strong></p>
+            <ul>
+                <li>Actuamos rápidamente para dar soluciones.</li>
+                <li>Nos comprometemos, proponemos e innovamos.</li>
+                <li>Aprendemos constantemente para mejorar y superar desafíos.</li>
+            </ul>
+        </article>
+
+        <article class="proposito-card">
+            <span class="proposito-icon">&#x1F9D1;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F9D1;</span> <h4>Nos cuidamos para cuidar</h4>
+            <p><strong>El bienestar comienza con nosotros.</strong></p>
+            <ul>
+                <li>Promovemos activamente nuestro bienestar.</li>
+                <li>Tratamos a todos con cariño y respeto.</li>
+                <li>Vivimos en un clima de confianza y apoyo mutuo.</li>
+            </ul>
+        </article>
+
+        <article class="proposito-card">
+            <span class="proposito-icon">&#x1F4A1;</span> <h4>Somos cercanos y empáticos</h4>
+            <p><strong>Valoramos a las personas.</strong></p>
+            <ul>
+                <li>Escuchamos las necesidades para atenderlas mejor.</li>
+                <li>Creamos experiencias y soluciones donde las personas se sientan valoradas.</li>
+                <li>Saludamos, reconocemos y celebramos.</li>
+            </ul>
+        </article>
+
+        <article class="proposito-card">
+            <span class="proposito-icon">&#x1F46B;</span> <h4>Somos un solo equipo</h4>
+            <p><strong>Conectados por un Propósito.</strong></p>
+            <ul>
+                <li>Comunicamos asertiva y oportunamente.</li>
+                <li>Brindamos la mejor experiencia a los pacientes y cuidadores.</li>
+                <li>Formamos equipos multidisciplinarios para crear mejores resultados.</li>
+            </ul>
+        </article>
+
+        <article class="proposito-card">
+            <span class="proposito-icon">&#x1F6E1;&#xFE0F;</span> <h4>Somos íntegros</h4>
+            <p><strong>La integridad es la base de nuestra excelencia.</strong></p>
+            <ul>
+                <li>Actuamos siempre con honestidad y ética.</li>
+                <li>Cumplimos con nuestra palabra y compromisos.</li>
+                <li>Mantenemos altos estándares de calidad y seguridad para nuestros pacientes.</li>
+            </ul>
+        </article>
+    </div>
+  </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 CLÍNICA LIMASURE | Síguenos en
+<footer>
+    <p>&copy; 2025 CLÍNICA LIMASURE | Un proyecto de Antony Celestino Abad y Sergio Mamani Orihuela |
+      Síguenos en
       <a href="#">Facebook</a>,
       <a href="#">Instagram</a>,
       <a href="#">LinkedIn</a>
@@ -79,4 +144,3 @@
   </footer>
 </body>
 </html>
-

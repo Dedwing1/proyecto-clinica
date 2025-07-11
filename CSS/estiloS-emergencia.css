@@ -1,0 +1,295 @@
+/* Styles for individual Service Detail Pages (e.g., S-emergencia.html) */
+/* This CSS is designed to be consistent across all service sub-pages. */
+
+#body-servicio-detalle {
+    background-color: #f8fbfd; /* Very light, clean background */
+}
+
+#contenido-detalle-servicio {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Service Hero Section (Title Banner) */
+.servicio-hero {
+    background-color: #e6f2ff; /* Light blue background for the title section */
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.servicio-hero h2 {
+    color: #007bff;
+    font-size: 3.2em; /* Larger, prominent title */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+/* Main Service Info Section (Text + Image) */
+.servicio-info-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 40px; /* Space between text and image */
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+    align-items: flex-start; /* Align text and image at the top */
+}
+
+.servicio-texto {
+    flex: 1; /* Text takes more space */
+    min-width: 300px; /* Minimum width for text column */
+}
+
+.servicio-texto .servicio-subtitulo {
+    color: #0056b3; /* Darker blue for sub-title */
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0efff;
+}
+
+.servicio-texto p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.servicio-texto p strong {
+    color: #0056b3;
+}
+
+.servicio-texto .lista-caracteristicas {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.servicio-texto .lista-caracteristicas li {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 25px; /* Space for custom bullet */
+}
+
+.servicio-texto .lista-caracteristicas li::before {
+    content: '✅'; /* Custom checkmark bullet point */
+    position: absolute;
+    left: 0;
+    color: #28a745; /* Green checkmark */
+    font-size: 1.1em;
+}
+
+.servicio-texto .emergencia-texto {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #dc3545; /* Red for emphasis */
+}
+
+.btn-llamar {
+    display: inline-block;
+    background-color: #dc3545; /* Red button for emergencies */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-llamar:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: translateY(-3px);
+}
+
+.servicio-imagen {
+    flex: 1; /* Image takes less space */
+    min-width: 250px; /* Minimum width for image column */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.servicio-imagen img {
+    max-width: 200%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+}
+
+/* Contact Form Section */
+.formulario-contacto-servicio {
+    background-color: #eaf6ff; /* Light blue background for the form section */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.formulario-contacto-servicio h3 {
+    color: #007bff;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: calc(100% - 24px); /* Adjust for padding */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button[type="submit"] {
+    background-color: #28a745; /* Green submit button */
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .servicio-info-section {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .servicio-texto,
+    .servicio-imagen {
+        flex: none; /* Remove flex grow */
+        width: 100%; /* Take full width */
+        min-width: unset; /* Reset min-width */
+        text-align: center;
+    }
+
+    .servicio-texto p,
+    .servicio-texto .lista-caracteristicas li {
+        text-align: left; /* Keep text left aligned in its column */
+    }
+
+    .servicio-texto .lista-caracteristicas li::before {
+        left: 50%; /* Center bullet for mobile if text is centered */
+        transform: translateX(-100px); /* Adjust to align with list item */
+        /* You may need to fine-tune this value based on actual content and text alignment */
+    }
+}
+
+@media (max-width: 768px) {
+    .servicio-hero {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+
+    .servicio-hero h2 {
+        font-size: 2.5em;
+    }
+
+    .servicio-info-section {
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+
+    .servicio-texto .servicio-subtitulo {
+        font-size: 1.4em;
+    }
+
+    .servicio-texto p,
+    .servicio-texto .lista-caracteristicas li {
+        font-size: 0.95em;
+    }
+
+    .btn-llamar {
+        padding: 12px 25px;
+        font-size: 1.2em;
+    }
+
+    .formulario-contacto-servicio {
+        padding: 30px;
+    }
+
+    .formulario-contacto-servicio h3 {
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.95em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio-hero h2 {
+        font-size: 2em;
+    }
+
+    .servicio-info-section {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .servicio-texto .lista-caracteristicas li::before {
+        transform: translateX(-50px); /* Further adjust for smaller screens */
+    }
+
+    .btn-llamar {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .formulario-contacto-servicio h3 {
+        font-size: 1.8em;
+    }
+}

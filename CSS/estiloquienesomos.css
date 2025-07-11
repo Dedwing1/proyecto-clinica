@@ -1,0 +1,426 @@
+/* General Styles for "Quiénes Somos" Page */
+#body-quienes-somos {
+    background-color: #f8fcfd; /* Slightly different background to differentiate from index */
+}
+
+#contenido-quienes-somos {
+    max-width: 1300px; /* Slightly narrower content area */
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* --- Main Heading --- */
+#contenido-quienes-somos h2 {
+    color: #007bff; /* Primary blue */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0; /* Subtle underline */
+}
+
+/* --- Introduction Section --- */
+.introduccion {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.introduccion p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #444;
+}
+
+.introduccion strong {
+    color: #0056b3; /* Darker blue for emphasis */
+    font-weight: bold;
+}
+
+/* --- Misión, Visión, Valores Section --- */
+.mision-vision-valores {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 25px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.card-detail {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Allow cards to grow */
+    min-width: 280px; /* Minimum width before wrapping */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text within cards */
+}
+
+.card-detail:hover {
+    transform: translateY(-8px) scale(1.01); /* More pronounced lift and slight scale */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-detail h3 {
+    color: #28a745; /* Green for section titles */
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    border-bottom: 2px dashed #e9ecef; /* Dashed separator */
+    padding-bottom: 8px;
+    width: 80%; /* Control width of the border */
+}
+
+.card-detail p,
+.card-detail ul {
+    font-size: 1em;
+    color: #555;
+    text-align: justify; /* Justify paragraphs */
+    width: 100%; /* Ensure text takes full width of card */
+}
+
+.card-detail ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin-top: 10px;
+}
+
+.card-detail ul li {
+    background-color: #e6f7ff; /* Light blue background for list items */
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 4px solid #007bff; /* Accent border */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    font-weight: 500;
+}
+
+.card-detail ul li:hover {
+    background-color: #d1ecf1;
+    border-left-color: #0056b3;
+}
+
+/* --- Equipo Fundador Section --- */
+.equipo-fundador {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+    text-align: center; /* Center content within this section */
+}
+
+.equipo-fundador h3 {
+    color: #007bff;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.equipo-content {
+    display: flex;
+    flex-direction: column; /* Stack on small screens */
+    align-items: center;
+    gap: 30px;
+}
+
+.equipo-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align list items to the left within their container */
+    font-size: 1.1em;
+    flex-grow: 1; /* Allow list to take available space */
+}
+
+.equipo-content ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Sibling selector: applies to ul directly following an h3 */
+.equipo-fundador h3 + .equipo-content ul {
+    margin-top: 0; /* Override default margin from h3+p in style.css if needed */
+}
+
+/* Pseudoclass for list items: adding a custom bullet point */
+.equipo-content ul li::before {
+    content: "👨‍⚕️"; /* Using an emoji as a custom bullet */
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+
+.equipo-content ul li strong {
+    color: #333;
+}
+
+.img-equipo {
+    max-width: 100%;
+    width: 500px; /* Specific width for the image */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+}
+
+.img-equipo:hover {
+    transform: scale(1.05) rotate(-3deg); /* Zoom and slight rotation on hover */
+}
+
+/* --- Aspirations Section --- */
+.aspiraciones {
+    background-color: #e9f7ee; /* Light green background */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #d4edda;
+    margin-bottom: 40px;
+}
+
+.aspiraciones h3 {
+    color: #007bff;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aspiraciones ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Descendant selector: styles all li within .aspiraciones ul */
+.aspiraciones ul li {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.05em;
+    color: #333;
+    position: relative;
+    padding-left: 45px; /* Space for custom bullet */
+}
+
+/* Pseudoclass for custom checkmark bullet */
+.aspiraciones ul li::before {
+    content: "✅"; /* Checkmark emoji */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+}
+
+.aspiraciones ul li:hover {
+    background-color: #f0fdf5; /* Lighter green on hover */
+    transform: translateX(5px); /* Slide effect */
+}
+
+/* --- Footer for this page --- */
+/* (Inherits most styles from style.css, but you can add specific overrides here if needed) */
+footer {
+    border-top: 5px solid #28a745; /* Green line for this page's footer */
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (min-width: 768px) {
+    .equipo-content {
+        flex-direction: row; /* Side-by-side on larger screens */
+        justify-content: space-between;
+        align-items: flex-start; /* Align content to the top */
+    }
+
+    .equipo-content ul {
+        flex: 1; /* Allow list to take up half space */
+        margin-right: 30px;
+    }
+
+    .img-equipo {
+        flex-shrink: 0; /* Prevent image from shrinking */
+    }
+}
+
+@media (max-width: 767px) {
+    .card-detail {
+        margin-bottom: 20px; /* Space between stacked cards */
+    }
+
+    .card-detail h3 {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .equipo-fundador .equipo-content ul {
+        text-align: center; /* Center list items on small screens */
+    }
+
+    .equipo-content ul li {
+        padding-left: 0; /* Remove custom bullet padding on small screens if it causes issues */
+    }
+
+    .equipo-content ul li::before {
+        position: static; /* Place emoji inline for small screens */
+        margin-right: 5px;
+        transform: none;
+    }
+}
+
+
+/* --- NUEVA SECCIÓN: Cuidando con Propósito --- */
+.proposito-section {
+    padding: 60px 0;
+    background-color: #f0f5fa; /* Light background for this section */
+    text-align: center;
+    margin-top: 40px; /* Space from previous section */
+}
+
+.proposito-titulo {
+    color: #1a2a5e; /* Darker blue for prominence */
+    font-size: 2.8em;
+    margin-bottom: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.proposito-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for cards */
+    gap: 30px;
+    max-width: 1200px; /* Limit grid width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.proposito-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: left; /* Align text inside card */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align icon and text to the left */
+}
+
+.proposito-card:hover {
+    transform: translateY(-10px) scale(1.02); /* Lift and slight zoom */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.proposito-icon {
+    font-size: 3.5em; /* Size of the emoji icon */
+    margin-bottom: 15px;
+    color: #007bff; /* Icon color */
+    display: block; /* Ensure icon takes its own line */
+    line-height: 1; /* Remove extra space around emoji */
+}
+
+.proposito-card h4 {
+    color: #1a2a5e;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.proposito-card p {
+    color: #555;
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-style: italic; /* Italic for the sub-heading text */
+    text-align: left; /* Ensure alignment */
+}
+
+.proposito-card p strong {
+    color: #0056b3; /* Darker blue for strong text */
+    font-weight: bold;
+}
+
+.proposito-card ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.proposito-card ul li {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 25px; /* Space for custom bullet */
+    line-height: 1.4;
+    text-align: left; /* Ensure alignment */
+}
+
+/* Pseudoclass for custom bullet points in purpose cards */
+.proposito-card ul li::before {
+    content: "•"; /* Standard bullet point */
+    position: absolute;
+    left: 0;
+    color: #28a745; /* Green bullet */
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .proposito-titulo {
+        font-size: 2em;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .proposito-grid {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+        padding: 0 15px;
+    }
+
+    .proposito-card {
+        padding: 25px;
+        margin-bottom: 20px; /* Add space between stacked cards */
+    }
+
+    .proposito-icon {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    .proposito-card h4 {
+        font-size: 1.3em;
+    }
+
+    .proposito-card p {
+        font-size: 0.95em;
+    }
+
+    .proposito-card ul li {
+        font-size: 0.9em;
+        padding-left: 20px;
+    }
+
+    .proposito-card ul li::before {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .proposito-titulo {
+        font-size: 1.8em;
+    }
+}

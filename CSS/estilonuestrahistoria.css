@@ -1,0 +1,239 @@
+/* --- Styles for "Nuestra Historia" Page --- */
+
+#body-nuestra-historia {
+    background-color: #eef5ff; /* A softer, inviting blue background */
+}
+
+#contenido-nuestra-historia {
+    max-width: 1350px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#contenido-nuestra-historia h2 {
+    color: #007bff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cce5ff; /* Lighter border for this page */
+}
+
+/* Historia Intro Section */
+.historia-intro {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.historia-intro p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.historia-intro strong {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.img-historia {
+    display: block; /* Center the image */
+    max-width: 80%; /* Adjust size as needed */
+    height: auto;
+    margin: 30px auto 10px; /* Center with margin */
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease;
+}
+
+.img-historia:hover {
+    transform: scale(1.03) rotate(2deg); /* Slightly larger and rotated on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Línea de Tiempo Section - HORIZONTAL */
+.linea-tiempo {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    overflow-x: auto; /* Allow horizontal scrolling if items exceed width */
+    white-space: nowrap; /* Prevent items from wrapping */
+    padding-bottom: 50px; /* Add space for the line/circles below */
+}
+
+.linea-tiempo h3 {
+    color: #007bff;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timeline-container {
+    position: relative;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: flex-start; /* Align items to the top of the container */
+    padding: 20px 0;
+    margin: 0 auto;
+    width: fit-content; /* Allow container to grow with content */
+    min-width: 100%; /* Ensure it takes at least 100% width */
+}
+
+/* Horizontal line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    height: 4px; /* Thickness of the horizontal line */
+    background-color: #a7d9ff; /* Light blue line */
+    top: -2.1%; /* Position roughly in the middle of the container */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    width: 250px; /* Fixed width for each item */
+    flex-shrink: 0; /* Prevent items from shrinking */
+    text-align: center;
+    padding-top: 40px; /* Space for the line and circle above */
+    padding-bottom: 20px; /* Space for content below */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: normal; /* Allow text to wrap inside item */
+}
+
+/* Circle marker on the horizontal line */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #007bff; /* Primary blue dot */
+    border: 4px solid #fff; /* White border */
+    top: calc(-10% - 12.5px); /* Center vertically on the line */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    border-radius: 50%;
+    z-index: 1; /* Ensure it's above the line */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-item:hover::after {
+    background-color: #28a745; /* Green on hover */
+    transform: translateX(-50%) scale(1.2);
+}
+
+.timeline-date {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 5px;
+    position: absolute; /* Position date relative to item */
+    top: 5px; /* Place above the circle/line area */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Keep date on one line */
+}
+
+.timeline-content {
+    background-color: #f7f7f7; /* Light grey background for content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    flex-grow: 1; /* Allow content to take available height */
+    margin-top: 15px; /* Space between date/circle and content box */
+    width: calc(100% - 20px); /* Adjust width to fit padding */
+    box-sizing: border-box;
+}
+
+.timeline-item:hover .timeline-content {
+    background-color: #eaf6ff; /* Lighter blue on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+    color: #1a2a5e;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* --- Footer for this page --- */
+/* (Inherits most styles from style.css, but you can add specific overrides here if needed) */
+footer {
+    border-top: 5px solid #28a745; /* Green line for this page's footer */
+}
+
+
+/* Responsive adjustments for horizontal timeline */
+@media (max-width: 768px) {
+    .linea-tiempo {
+        padding-bottom: 30px; /* Adjust padding for smaller screens */
+    }
+    .timeline-container {
+        flex-direction: column; /* Stack items vertically again on small screens */
+        align-items: center;
+        padding-bottom: 0;
+        min-width: unset; /* Remove min-width to allow shrinking */
+        white-space: normal; /* Allow wrapping of entire container */
+    }
+
+    .timeline-container::before { /* Revert to vertical line */
+        width: 4px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+
+    .timeline-item {
+        width: 100%; /* Full width on small screens */
+        padding: 40px 15px 20px 15px; /* Adjust padding */
+        text-align: left; /* Align text left */
+        align-items: flex-start; /* Align content left */
+    }
+
+    .timeline-item::after { /* Adjust circle position for vertical stacking */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+    }
+    
+    .timeline-item:hover::after {
+        transform: translateX(-50%) scale(1.2);
+    }
+
+    .timeline-date {
+        position: static; /* Place date normally within flow */
+        transform: none;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%; /* Ensure date spans full width if needed */
+    }
+
+    .timeline-content {
+        margin-top: 10px; /* Adjust margin */
+        width: 100%; /* Ensure content takes full width */
+    }
+}

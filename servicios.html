@@ -2,86 +2,117 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios Médicos - CLÍNICA LIMASURE</title>
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/estilosdetalle.css">
+  <link rel="stylesheet" href="CSS/estiloservicios.css">
 </head>
-<body>
-<header id="encabezado-clinica">
-  <div class="contenedor-header">
-    <a href="index.html">
+<body id="body-servicios">
+<header id="encabezado-clinica" class="contenedor-header">
+  <a href="index.html" class="logo-link">
     <img src="IMAGENES/CLINICA-LOGO.avif" alt="CLÍNICA LIMASURE" class="logo" />
-    </a>
-    <div class="info-header">
-      <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
-      <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
-    </div>
-    <nav class="navegacion-clinica">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="quienes somos.html">Quiénes Somos</a></li>
-        <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+  </a>
+  <div class="info-header">
+    <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
+    <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
   </div>
+  <nav class="navegacion-clinica">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes somos.html">Quiénes Somos</a></li>
+      <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
 
-  <main id="contenedor-servicios">
-    <section id="seccion-servicios">
-      <h1>Nuestros Servicios Médicos</h1>
-      <div id="servicios-grid">
+<main id="contenido-servicios">
+  <section id="seccion-servicios">
+    <h1>Nuestros Servicios</h1> <p class="intro-paragraph">
+      En CLÍNICA LIMASURE, ponemos a tu disposición una atención integral, contando con el respaldo de un equipo de médicos de reconocida trayectoria en cada una de sus especialidades y demás profesionales de la salud altamente capacitados en sus respectivas áreas médicas o quirúrgicas, que te brindarán un trato amable y cálido en cada una de tus visitas.
+    </p>
 
-        <a href="S-medicigeneral.html">
-        <article id="servicio-medicina">
-       <img src="IMAGENES/medicina.jpg" alt="Medicina General">
-       <h3>Medicina General</h3>
-        <p>Evaluación médica integral, control de enfermedades comunes y seguimiento de tratamientos.</p>
+    <div class="servicios-grid">
+
+      <a href="S-medicigeneral.html" class="servicio-link-card">
+        <article class="servicio-card">
+          <img src="IMAGENES/medicina.jpg" alt="Medicina General">
+          <div class="servicio-content">
+            <h3>Medicina General</h3>
+            <p>Evaluación médica integral, control de enfermedades comunes y seguimiento de tratamientos.</p>
+            <button class="mas-informacion-btn">Más información</button>
+          </div>
         </article>
-        </a>
+      </a>
 
-        <a href="S-pediatria.html">
-        <article id="servicio-pediatria">
+      <a href="S-pediatria.html" class="servicio-link-card">
+        <article class="servicio-card">
           <img src="IMAGENES/pediatria.jpg" alt="Pediatría">
-          <h3>Pediatría</h3>
-          <p>Atención especializada para niños y adolescentes en todas las etapas de su desarrollo.</p>
+          <div class="servicio-content">
+            <h3>Pediatría</h3>
+            <p>Atención especializada para niños y adolescentes en todas las etapas de su desarrollo.</p>
+            <button class="mas-informacion-btn">Más información</button>
+          </div>
         </article>
-        </a>
+      </a>
 
-        <article id="servicio-ginecologia">
+      <a href="#" class="servicio-link-card">
+        <article class="servicio-card">
           <img src="IMAGENES/ginecologia.jpg" alt="Ginecología">
-          <h3>Ginecología</h3>
-          <p>Salud femenina, controles ginecológicos, planificación familiar y prevención.</p>
+          <div class="servicio-content">
+            <h3>Ginecología</h3>
+            <p>Salud femenina, controles ginecológicos, planificación familiar y prevención.</p>
+            <button class="mas-informacion-btn">Más información</button>
+          </div>
         </article>
+      </a>
 
-        <article id="servicio-laboratorio">
+      <a href="#" class="servicio-link-card">
+        <article class="servicio-card">
           <img src="IMAGENES/laboratorio.jpg" alt="Laboratorio Clínico">
-          <h3>Laboratorio Clínico</h3>
-          <p>Análisis clínicos rápidos y precisos para apoyar diagnósticos médicos.</p>
+          <div class="servicio-content">
+            <h3>Laboratorio Clínico</h3>
+            <p>Análisis clínicos rápidos y precisos para apoyar diagnósticos médicos.</p>
+            <button class="mas-informacion-btn">Más información</button>
+          </div>
         </article>
+      </a>
 
-        <article id="servicio-odontologia">
+      <a href="#" class="servicio-link-card">
+        <article class="servicio-card">
           <img src="IMAGENES/odontologia.jpg" alt="Odontología">
-          <h3>Odontología</h3>
-          <p>Tratamientos dentales, limpiezas, ortodoncia, extracciones y estética dental.</p>
+          <div class="servicio-content">
+            <h3>Odontología</h3>
+            <p>Tratamientos dentales, limpiezas, ortodoncia, extracciones y estética dental.</p>
+            <button class="mas-informacion-btn">Más información</button>
+          </div>
         </article>
+      </a>
 
-        <a href="S-emergencia.html">
-        <article id="servicio-emergencias">
+      <a href="S-emergencia.html" class="servicio-link-card">
+        <article class="servicio-card">
           <img src="IMAGENES/emergencias.jpg" alt="Emergencias 24h">
-          <h3>Emergencias 24h</h3>
-          <p>Atención médica de urgencia disponible las 24 horas del día, los 7 días de la semana.</p>
+          <div class="servicio-content">
+            <h3>Emergencias 24h</h3>
+            <p>Atención médica de urgencia disponible las 24 horas del día, los 7 días de la semana.</p>
+            <button class="mas-informacion-btn">Más información</button>
+          </div>
         </article>
-        </a>  
-      </div>
-    </section>
-  </main>
+      </a>
+    </div>
+  </section>
+</main>
 
-  <footer>
-    <p>&copy; 2025 Clínica LimaSure. Todos los derechos reservados.</p>
+<footer>
+    <p>&copy; 2025 CLÍNICA LIMASURE | Un proyecto de Antony Celestino Abad y Sergio Mamani Orihuela |
+      Síguenos en
+      <a href="#">Facebook</a>,
+      <a href="#">Instagram</a>,
+      <a href="#">LinkedIn</a>
+    </p>
   </footer>
 </body>
 </html>

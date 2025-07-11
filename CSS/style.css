@@ -1,19 +1,11 @@
-/* estilos ya separados y documentados en cierta parte  */
-/* este root es una creacion de variables
-por ejemplo para llamar aa ese color asi coloco background-color: var(--principal) serian como llamar ese
-color azul sirve para definir colores y solo llamar al nombre en ves de esta acordandonos que codigo de 
-color es  */
 :root {
-  --principal: #283593;     /* Morado profundo elegante */
+  --principal: #007bff;     /* Morado profundo elegante */
   --secundario: #FDF6F0;    /* Crema cálido claro */
   --acento: #B33C3C;        /* Rojo vino para botones, confianza y energía */
   --fondo: #FFFFFF;         /* Blanco limpio */
   --texto: #2C2C2C;         /* Gris oscuro legible */
 }
 
-
-/* codigo para que la imagen no se repita y cuadre correctamente  */
-/* ESE BODY ES SOLO PARA EL INICIO */
 #body-parainicio {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,552 +17,16 @@ color es  */
   background-attachment: fixed;         /* Opcional: efecto paralax sutil */
   color: var(--texto);
 }
-
-/* y este body de abajo es para todo el html ahi puedes hacer las modificaciones  */
+/* General Body Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(255, 255, 255);
-  color: var(--texto);  
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f8fb; /* Light blue-grey background */
 }
 
-/* para cambiar solo el footer o el final de la pagina  */
-footer {
-  background-color: var(--principal);
-  color: var(--secundario);
-  text-align: center;
-  padding: 20px;
-}
-
-/* tamaño del logo solo al principio del pagina  */
-.logo {
-  width: 80px;
-  height: auto;
-  margin-bottom: 10px;
-}
-/* lista de los botones en el nav */
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--secundario);
-  font-weight: bold;
-  padding: 8px 12px;
-  border: 1px solid var(--secundario);
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-  background-color: var(--secundario);
-  color: white;
-}
-
-main {
-  padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* para agregar los recuadros en el html  */
-section {
-  border: 1px solid var(--secundario);
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 30px;
-  background-color: #fff;
-}
-/* solo titulos se puede cambiar el color o tamaño a eleccion */
-h2, h3 {
-  color: var(--principal);
-  margin-bottom: 10px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 8px;
-}
-
-ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-footer a {
-  color: var(--secundario);
-  text-decoration: none;
-}
-
-
-footer a:hover {
-  text-decoration: underline;
-}
-/* solo clases--------------------------------------------------------------- */
-
-/* clase para los botones  */
-.btn, button {
-  background-color: var(--acento);
-  color: white;
-  border-radius: 6px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover, button:hover {
-  background-color: #8B2A2A; /* tono más oscuro del vino */
-}
-/* -------------------fin de clase botones */
-
-.hero {
-  background-color: white;
-  color: #2C3E50;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.hero-content h2 {
-  font-size: 2.5em;
-  text-shadow: 2px 2px 4px #000;
-}
-
-.hero-content p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.destacados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 40px 0;
-}
-
-.card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  width: 280px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  text-align: center;
-}
-
-.galeria-cascade {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: -60px;
-  margin: 40px 0;
-}
-
-.galeria-cascade img {
-  width: 200px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.testimonios {
-  padding: 30px;
-}
-
-.testimonial {
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-.estrellas {
-  color: rgb(255, 0, 0);
-  font-size: 1.2em;
-}
-
-
-
-
-.noticia {
-  background-color: #fff;
-  padding: 20px;
-  border-left: 5px solid var(--secundario);
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.noticia .etiqueta {
-  background-color: var(--secundario);
-  color: #000;
-  padding: 3px 8px;
-  border-radius: 3px;
-  font-size: 0.8em;
-  margin-left: 10px;
-}
-
-.noticia .fecha {
-  font-size: 0.9em;
-  color: #777;
-  margin-bottom: 10px;
-}
-
-.linea-tiempo ul {
-  border-left: 3px solid var(--secundario);
-  padding-left: 20px;
-  margin-top: 20px;
-}
-
-.linea-tiempo li {
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.linea-tiempo li::before {
-  content: "●";
-  position: absolute;
-  left: -15px;
-  color: var(--secundario);
-}
-/* fin de las clasess-------------------------------------- */
-
-/* para el formulario */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1em;
-}
-
-iframe {
-  border: none;
-  border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .destacados {
-    flex-direction: column;
-    align-items: center;
-  }
-  .alianzas .logos {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero {
-    padding: 60px 15px;
-  }
-  .hero-content h2 {
-    font-size: 1.8em;
-  }
-}
-
-/*----------------------Pagina contacto---------------*/
-
-/* === Estilos para contacto.html en dos columnas === */
-#seccion-contacto-doble {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
-#seccion-contacto-doble article {
-  flex: 1 1 48%; /* 2 columnas de aproximadamente 48% */
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid var(--secundario);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-#seccion-contacto-doble article:hover {
-  transform: translateY(-5px);
-}
-
-#seccion-contacto-doble h3 {
-  color: var(--principal);
-  margin-bottom: 15px;
-}
-
-/* Ajustes para listas de horarios */
-#horarios-atencion ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-#horarios-atencion li {
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-}
-
-#horarios-atencion li:hover {
-  color: var(--principal);
-}
-
-/* Formulario alineado y estilizado */
-#formulario-contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* Responsive: una sola columna en pantallas pequeñas */
-@media (max-width: 768px) {
-  #seccion-contacto-doble {
-    flex-direction: column;
-  }
-
-  #seccion-contacto-doble article {
-    flex: 1 1 100%;
-  }
-}
-
-/* ----------------- ESTILOS EXCLUSIVOS PARA noticias.html ------------------- */
-
-/* ------- noticias.html ------- */
-
-#noticias-contenido {
-  padding: 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-#seccion-noticias {
-  background-color: var(--fondo);
-  border-radius: 10px;
-  padding: 20px;
-  border: 1px solid var(--secundario);
-}
-
-#seccion-noticias h1 {
-  color: var(--principal);
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* CUADRÍCULA DE NOTICIAS EN COLUMNAS */
-#noticias-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-  gap: 30px;
-}
-
-/*  TARJETAS DE NOTICIAS */
-#noticias-grid article {
-  background-color: #fff;
-  border-left: 5px solid var(--principal);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#noticias-grid article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-
-/*  IMÁGENES Y VIDEOS RECTANGULARES  */
-#noticias-grid article img,
-#noticias-grid article video {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
-#noticias-grid article img:hover {
-  transform: scale(1.02);
-}
-
-#noticias-grid article video:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/*  TITULOS, FECHAS, ETIQUETAS  */
-#noticias-grid h3 {
-  color: var(--principal);
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-#noticias-grid p {
-  font-size: 0.95em;
-  color: #444;
-  margin-bottom: 8px;
-}
-
-.etiqueta {
-  background-color: var(--secundario);
-  color: #000;
-  padding: 3px 8px;
-  font-size: 0.75em;
-  border-radius: 4px;
-  margin-left: 10px;
-}
-
-.fecha {
-  font-size: 0.85em;
-  color: #777;
-}
-
-/*  RESPONSIVE: 1 columna en móviles  */
-@media (max-width: 768px) {
-  #noticias-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/*  VIDEO DE HISTORIA EN FILA COMPLETA  */
-#noticia-video {
-  margin-top: 40px;
-  background-color: #fff;
-  border-left: 5px solid var(--principal);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#noticia-video:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-
-#noticia-video video {
-  width: 100%;
-  height: 300px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  transition: box-shadow 0.3s ease;
-}
-
-#noticia-video video:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-#noticia-video h3 {
-  color: var(--principal);
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-#noticia-video p {
-  font-size: 0.95em;
-  color: #444;
-}
-
-
-/*---------------------------pagina servicios--------------------------------------------*/
-
-/* ========== Página de Servicios Médicos  ========== */
-
-#contenedor-servicios {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-#seccion-servicios {
-  padding: 20px;
-  background-color: var(--fondo);
-  border-radius: 10px;
-  border: 1px solid var(--secundario);
-}
-
-#seccion-servicios h1 {
-  color: var(--principal);
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* Grid en filas y columnas */
-#servicios-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* dos columnas */
-  gap: 30px;
-}
-
-/* Tarjeta individual de servicio */
-#servicios-grid article {
-  background-color: #fff;
-  border: 1px solid var(--secundario);
-  border-radius: 14px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#servicios-grid article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* Imágenes rectangulares con puntas ovaladas */
-#servicios-grid article img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px; /* puntas ovaladas */
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
-#servicios-grid article img:hover {
-  transform: scale(1.02);
-}
-
-#servicios-grid h3 {
-  margin-bottom: 10px;
-  color: var(--principal);
-}
-
-#servicios-grid p {
-  font-size: 0.95em;
-  color: #444;
-}
-
-/* Responsive: 1 columna en pantallas pequeñas */
-@media (max-width: 768px) {
-  #servicios-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* nuevos cambios  hechos en clase */
 /* === ENCABEZADO NUEVO CON ESTILO PROFESIONAL === */
 
 /* ID principal para el header */
@@ -636,139 +92,345 @@ iframe {
   color: #000;
 }
 
-/* Responsive para dispositivos pequeños */
-@media (max-width: 768px) {
-  .contenedor-header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-header {
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .navegacion-clinica ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-}
-/* nuevos cambios en clase V2 */
-/* === NUEVAS CLASES DOCUMENTADAS PARA ESTILO MÁS COMPACTO Y FORMAL === */
-
-/* === NUEVAS CLASES DOCUMENTADAS === */
-
-/* Contenedor principal */
+/* --- Main Content Styles --- */
 #contenido-principal {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-/* HERO con 2 columnas */
+/* Hero Section */
 .fila-hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  padding: 40px 20px;
-  background-color: #62a5c075;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.03);
-  margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    padding: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .hero-column {
-  flex: 1;
+    flex: 1;
+    padding-right: 30px;
+    min-width: 300px; /* Ensure column doesn't get too small */
 }
 
 .hero-column h2 {
-  font-size: 2.2em;
-  color: var(--principal);
-  margin-bottom: 10px;
+    color: #007bff;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    line-height: 1.2;
 }
 
 .hero-column p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    text-align: justify; /* Justify text */
 }
 
-.hero-img {
-  flex: 0 0 200px;
+
+
+.btn {
+    display: inline-block;
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.hero-img img {
-  width: 100%;
-  border-radius: 8px;
+.btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-3px);
 }
 
-/* Fila de 3 columnas para valores */
+/* Three-Column Section (Values) */
 .fila-3col {
-  background-color: #62a5c075;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 40px;
-}
-.card, section, article {
-  background-color: var(--secundario);
-  color: var(--texto);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
-/* Fila de galería de imágenes */
+.fila-3col .card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 280px; /* Minimum width for cards */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fila-3col .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fila-3col .card h3 {
+    color: #007bff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.fila-3col .card p {
+    font-size: 1.05em;
+    color: #555;
+    text-align: justify;
+}
+
+/* Gallery Section */
 .fila-galeria {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #62a5c075;
+  background-color: #ffffff;
   border-radius: 12px;
   margin-bottom: 40px;
 }
 
 .fila-galeria img {
-  width: 160px;
+  width: 260px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Testimonios en 2 columnas */
+.fila-galeria img:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+}
+
+/* Testimonials Section */
 .fila-2col {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .testimonio-box {
-  background-color: #62a5c075;
-  padding: 20px;
-  border-left: 4px solid var(--secundario);
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 320px; /* Minimum width for testimonial boxes */
+    position: relative; /* For the star positioning */
 }
 
-/* Cita centrada */
-
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .fila-hero{
-    flex-direction: column;
+.testimonio-box p {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 15px;
     text-align: center;
-  }
-
-  .fila-3col,
-  .fila-2col {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-img {
-    margin-top: 20px;
-  }
 }
+
+.testimonio-box strong {
+    display: block;
+    text-align: right;
+    color: #007bff;
+    font-size: 1.1em;
+}
+
+.estrellas {
+    text-align: center;
+    color: #ffc107; /* Gold color for stars */
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* --- Footer Styles --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95em;
+    border-top: 5px solid #007bff; /* Brand color line */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #66b3ff; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+/* --- Specific Text Styling --- */
+/* Example of using strong and i tags */
+.hero-column p strong {
+    color: #0056b3;
+}
+
+.testimonio-box p i { /* if you decide to use <i> for emphasis in testimonials */
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Example of a sibling selector: Applies margin to paragraphs that immediately follow an h3 */
+h3 + p {
+    margin-top: 10px;
+}
+
+/* Example of a descendant selector: Styles all anchor tags inside the navigation */
+.navegacion-clinica a {
+    text-transform: uppercase; /* Make nav links uppercase */
+}
+
+/* Example of child selector: Selects direct children list items of ul in navigation */
+.navegacion-clinica > ul > li {
+    padding: 5px 0;
+}
+
+
+
+/* Responsive Design Considerations (Basic Media Queries) */
+@media (max-width: 768px) {
+    .contenedor-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-header {
+        margin-bottom: 15px;
+    }
+
+    .navegacion-clinica ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fila-hero,
+    .fila-3col,
+    .fila-2col {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-column,
+    .fila-3col .card,
+    .testimonio-box {
+        padding: 20px;
+        width: 100%; /* Make them full width on small screens */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    .hero-img {
+        margin-top: 30px;
+    }
+
+    .hero-column h2 {
+        font-size: 2.2em;
+    }
+
+    .fila-galeria {
+        grid-template-columns: 1fr; /* Stack images vertically on small screens */
+    }
+}
+
+/* --- Hero Section (New for Index Page) --- */
+.hero-section {
+   max-width: 2000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    background-color: #d6eaf8; /* Light purple background from image_99635b.jpg */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Push content to the right */
+    padding: 0 5%; /* Horizontal padding */
+    box-sizing: border-box;
+
+    background-image: url('../IMAGENES/doctor.png'); /* Assuming you extract the subtle pattern */
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: auto 100%, auto 100%; /* Doctor image fills height, pattern fills height */
+}
+
+.hero-content {
+    text-align: right; /* Align text content to the right */
+    max-width: 550px; /* Limit width of text for readability */
+    z-index: 2; /* Ensure text is above background elements */
+    padding-left: 20px; /* Small padding to prevent text touching image on smaller sizes */
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #ff7f00; /* Orange color from "QUEREMOS VERTE BIEN" */
+    font-weight: bold;
+    margin-bottom: 5px;
+    position: relative;
+    padding-right: 40px; /* Space for the orange line */
+    display: inline-block; /* To make line appear next to text */
+}
+
+.hero-subtitle::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Length of the orange line */
+    height: 3px;
+    background-color: #ff7f00; /* Orange color of the line */
+    border-radius: 5px;
+}
+
+.hero-title {
+    font-size: 3.5em; /* Large, prominent title */
+    color: #1a2a5e; /* Dark blue from headings in image_da5994.png */
+    margin: 10px 0 20px 0;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.hero-description {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #28a786; /* Teal color from button in image_99635b.jpg */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px; /* Slightly rounded button */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(40, 167, 134, 0.3);
+}
+
+.hero-button:hover {
+    background-color: #218870; /* Darker teal on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(40, 167, 134, 0.4);
+}
+
+
+

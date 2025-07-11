@@ -1,0 +1,179 @@
+/* Styles for Servicios Page */
+
+#body-servicios {
+    background-color: #f0f5fa; /* A clean, light background similar to the reference */
+}
+
+#contenido-servicios {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#seccion-servicios h1 {
+    color: #1a2a5e; /* Darker blue for the main title, similar to "Cuidando con propósito" */
+    font-size: 2.8em; /* Larger font size */
+    text-align: center;
+    margin-bottom: 20px; /* Closer to the intro paragraph */
+    font-weight: 700; /* Bolder */
+}
+
+.intro-paragraph {
+    font-size: 1.1em;
+    color: #555;
+    text-align: center; /* Center align the intro paragraph */
+    max-width: 900px; /* Limit width for readability */
+    margin: 0 auto 50px auto; /* Center and add space below */
+    line-height: 1.6;
+}
+
+/* Services Grid Layout */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min-width for larger cards */
+    gap: 30px; /* Space between cards */
+    margin-bottom: 60px;
+}
+
+.servicio-link-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.servicio-card {
+    background-color: #ffffff;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Stronger shadow */
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Slower transition */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px) scale(1.01); /* More pronounced lift and slight scale */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+    border: none; /* Remove previous hover border */
+}
+
+.servicio-card img {
+    width: 100%;
+    height: 200px; /* Slightly taller images for impact */
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.servicio-card .servicio-content {
+    padding: 25px; /* More internal padding */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push button to the bottom */
+}
+
+.servicio-card h3 {
+    color: #1a2a5e; /* Darker blue for titles, consistent with reference */
+    font-size: 1.6em; /* Larger title font */
+    margin-top: 0;
+    margin-bottom: 15px; /* More space below title */
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.servicio-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space before the button */
+    text-align: justify;
+}
+
+.mas-informacion-btn {
+    display: block; /* Make it a block element to take full width */
+    width: 100%; /* Full width button */
+    padding: 12px 15px;
+    background-color: #007bff; /* Primary blue for the button */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Rounded button corners */
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* In case it's on a link */
+}
+
+.mas-informacion-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+/* --- Footer for this page --- */
+/* (Inherits most styles from style.css, but you can add specific overrides here if needed) */
+footer {
+    border-top: 5px solid #28a745; /* Green line for this page's footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .servicios-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .servicio-card img {
+        height: 180px;
+    }
+
+    .servicio-card .servicio-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #seccion-servicios h1 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+
+    .intro-paragraph {
+        font-size: 1em;
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+        gap: 20px;
+    }
+
+    .servicio-card img {
+        height: 160px;
+    }
+
+    .servicio-card .servicio-content {
+        padding: 18px;
+    }
+
+    .servicio-card h3 {
+        font-size: 1.4em;
+    }
+
+    .servicio-card p {
+        font-size: 0.95em;
+    }
+
+    .mas-informacion-btn {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    #seccion-servicios h1 {
+        font-size: 1.8em;
+    }
+}

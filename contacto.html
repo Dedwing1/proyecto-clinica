@@ -2,82 +2,106 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Contacto - CLÍNICA LIMASURE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Contacto - CLÍNICA LIMASURE</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/estilocontacto.css">
 </head>
-<body>
-<header id="encabezado-clinica">
-  <div class="contenedor-header">
-    <a href="index.html">
+<body id="body-contacto">
+<header id="encabezado-clinica" class="contenedor-header"> <a href="index.html" class="logo-link">
     <img src="IMAGENES/CLINICA-LOGO.avif" alt="CLÍNICA LIMASURE" class="logo" />
-    </a>
-    <div class="info-header">
-      <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
-      <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
-    </div>
-    <nav class="navegacion-clinica">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="quienes somos.html">Quiénes Somos</a></li>
-        <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+  </a>
+  <div class="info-header">
+    <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
+    <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
   </div>
+  <nav class="navegacion-clinica">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes somos.html">Quiénes Somos</a></li>
+      <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
+<main id="contenido-contacto">
+  <section class="contacto-hero"> <h2>Contáctanos</h2>
+    <p class="intro-paragraph">En <strong>Clínica LimaSure</strong> estamos comprometidos con tu bienestar. Usa este formulario o escríbenos directamente por WhatsApp. ¡Estamos para ayudarte!</p>
+  </section>
 
-  <main>
-    <section id="contacto-intro">
-      <h2>Contáctanos</h2>
-      <p>En <strong>Clínica LimaSure</strong> estamos comprometidos con tu bienestar. Usa este formulario o escríbenos directamente por WhatsApp. ¡Estamos para ayudarte!</p>
-    </section>
+  <section class="seccion-contacto-info"> <article class="info-card"> <h3><i class="fas fa-clock"></i> Horarios de Atención</h3>
+      <ul class="lista-info"> <li><strong>Lunes a Viernes:</strong> 9:00 a.m. - 6:00 p.m.</li>
+        <li><strong>Sábados:</strong> 9:00 a.m. - 1:00 p.m.</li>
+        <li><strong>Domingos y feriados:</strong> 9:00 a.m. - 1:00 p.m.</li>
+      </ul>
 
-    <section id="seccion-contacto-doble">
-      <article id="horarios-atencion">
-        <h3>Horarios de Atención</h3>
-        <ul>
-          <li><strong>Lunes a Viernes:</strong> 9:00 a.m. – 6:00 p.m.</li>
-          <li><strong>Sábados:</strong> 9:00 a.m. – 1:00 p.m.</li>
-          <li><strong>Domingos y feriados:</strong> 9:00 a.m. – 1:00 p.m.</li>
-        </ul>
-        <h3>Atención por WhatsApp</h3>
-        <p>Haz clic para contactarnos directamente:</p>
-        <a href="https://wa.me/51934307271" class="btn" target="_blank">📱 Enviar mensaje</a>
-      </article>
+      <h3><i class="fab fa-whatsapp"></i> Atención por WhatsApp</h3>
+      <p>Haz clic para contactarnos directamente:</p>
+      <a href="https://wa.me/+51977877704" class="btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> Enviar mensaje
+      </a>
+      <p class="numero-contacto"><i class="fas fa-phone-alt"></i> También puedes llamarnos al: <strong>+51 977 877 704</strong></p>
+      <p class="numero-contacto"><i class="fas fa-phone-alt"></i> Oficina: <strong>(01) 615-6767</strong></p> </article>
 
-      <article id="formulario-contacto">
-        <h3>Formulario de contacto</h3>
-        <form action="#" method="post">
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" id="nombre" name="nombre" required>
+    <article class="info-card"> <h3><i class="fas fa-envelope"></i> Formulario de Contacto</h3>
+      <form action="#" method="post" class="contact-form"> <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-          <label for="correo">Correo electrónico:</label>
-          <input type="email" id="correo" name="correo" required>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
 
-          <label for="mensaje">Tu mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"> <label for="asunto">Asunto (Opcional):</label> <input type="text" id="asunto" name="asunto">
 
-          <button type="submit">Enviar mensaje</button>
-        </form>
-      </article>
-    </section>
+        <label for="mensaje">Tu mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-    <section id="ubicacion-mapa">
-      <h3>Encuéntranos aquí</h3>
-      <p>Nuestra sede está en el corazón de Lima. Puedes visitarnos o ubícanos con el mapa:</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.784477445329!2d-77.04140487269835!3d-12.05834473574726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c14e18a1c5%3A0x7d732e67b547a701!2sCl%C3%ADnica%20Internacional%2C%20Sede%20Lima!5e0!3m2!1ses-419!2spe!4v1751957143421!5m2!1ses-419!2spe" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-  </main>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </article>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Clínica LimaSure | Síguenos en 
-      <a href="#">Facebook</a>, 
-      <a href="#">Instagram</a>, 
-      <a href="#">LinkedIn</a>
-    </p>
-  </footer>
+  <section id="faq-section">
+  <h3>Preguntas Frecuentes</h3>
+  <div class="faq-item">
+    <h4>¿Cómo hago una cita?</h4>
+    <p>Puedes agendar una cita llamando a nuestro número (01) 615-6767, enviándonos un mensaje por WhatsApp al +51 977 877 704, o utilizando nuestro formulario de contacto.</p>
+  </div>
+  <div class="faq-item">
+    <h4>¿Aceptan seguros?</h4>
+    <p>Sí, trabajamos con MapfreSeguros, Pacífico, etc. Por favor, contáctanos para verificar la cobertura específica de tu plan.</p>
+  </div>
+  </section>
+
+  <section id="ubicacion-mapa">
+    <h3><i class="fas fa-map-marker-alt"></i> Encuéntranos aquí</h3>
+    <p>Nuestra sede está en el corazón de San Juan de Lurigancho, Lima. Puedes visitarnos o ubícanos con el mapa:</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15610.87034706596!2d-77.01239845!3d-11.996160399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c56d78d122e1%3A0x6b4f7a2d4b9a3e6c!2sSan%20Juan%20de%20Lurigancho%2C%20Lima!5e0!3m2!1sen!2spe!4v1700000000000!5m2!1sen!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="direccion-fisica"><i class="fas fa-location-arrow"></i> **Dirección:** [Tu Dirección Completa Aquí], San Juan de Lurigancho, Lima, Perú</p>
+   </section>
+
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-info">
+      <p>&copy; 2025 CLÍNICA LIMASURE</p>
+      <p>Un proyecto de Antony Celestino Abad y Sergio Mamani Orihuela</p>
+    </div>
+    <div class="footer-social-wrapper">
+      <span>Síguenos</span>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i> Youtube</a>
+        </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

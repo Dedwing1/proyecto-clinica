@@ -5,41 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clínica LimaSure - Emergencia</title>
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/estilosdetalle.css">
-</head>
-<body>
-  <!-- HEADER CON NAV (ya lo tienes) -->
-<header id="encabezado-clinica">
-  <div class="contenedor-header">
-    <a href="index.html">
-    <img src="IMAGENES/CLINICA-LOGO.avif" alt="CLÍNICA LIMASURE" class="logo" />
-    </a>    <div class="info-header">
-      <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
-      <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
-    </div>
-    <nav class="navegacion-clinica">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="quienes somos.html">Quiénes Somos</a></li>
-        <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+  <link rel="stylesheet" href="CSS/estiloS-emergencia.css"> </head>
+<body id="body-servicio-detalle"> <header id="encabezado-clinica" class="contenedor-header">
+   <a href="index.html" class="logo-link">
+    <img src="IMA/CLINICA-LOGO.avif" alt="CLÍNICA LIMASURE" class="logo" />
+  </a>
+  <div class="info-header">
+    <h1 class="titulo-clinica">CLÍNICA LIMASURE</h1>
+    <p class="eslogan">Cuidamos tu salud, construimos tu bienestar.</p>
   </div>
+  <nav class="navegacion-clinica">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes somos.html">Quiénes Somos</a></li>
+      <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
+  <main id="contenido-detalle-servicio"> <section class="servicio-hero"> <h2>Emergencia</h2>
+    </section>
 
-  <!-- CONTENIDO PRINCIPAL DE LA ESPECIALIDAD -->
-  <main id="detalle-servicio">
-    <section class="servicio-detalle">
-      <div class="texto">
-        <h2>Emergencia</h2>
-        <h3>Emergencia Adulto</h3>
-        <p>En el área de Emergencias estamos preparados para la atención de baja o alta complejidad, contamos con:</p>
-        <ul>
-          <li>25 tópicos generales</li>
+    <section class="servicio-info-section">
+       <div class="servicio-texto"> 
+        <p class="servicio-subtitulo">EmergenciaAdulto</p>
+         <p>En el área de Emergencias estamos preparados para la atención de baja o alta complejidad, contamos con:</p>
+        <ul class="lista-caracteristicas"> <li>25 tópicos generales</li>
           <li>2 tópicos de trauma shock</li>
           <li>1 tópico de traumatología</li>
           <li>1 tópico de cirugía</li>
@@ -52,36 +46,28 @@
         <p>
           Los procesos que realizamos en esta unidad son coordinados entre todos los equipos de emergencia.
         </p>
-        <p><strong>Ante alguna emergencia adultos, llamar al:</strong></p>
-        <a href="tel:016156767" class="btn-llamar">
-          📞 934-307-271
+        <p class="emergencia-texto"><strong>Ante alguna emergencia adultos, llamar al:</strong></p> <a href="tel:+51977877704" class="btn-llamar"> 📞 977-877-704
         </a>
       </div>
-      <div class="imagen">
-        <img src="IMA-SERVICIOS/EMERGENCIA.jpg" alt="Emergencia médica en atención">
-      </div>
+      <div class="servicio-imagen"> <img src="IMA-SERVICIOS/EMERGENCIA.jpg" alt="Atención en sala de emergencia"> </div>
     </section>
 
-    <!-- FORMULARIO DE CONTACTO AL FINAL -->
-    <section class="formulario-contacto-servicio">
-      <h3>Contáctanos por emergencias o dudas</h3>
-      <form>
-        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+    <section class="formulario-contacto-servicio"> <h3>Contáctanos por emergencias o dudas</h3>
+      <form class="contact-form"> <input type="text" name="nombre" placeholder="Tu nombre completo" required>
         <input type="email" name="correo" placeholder="Tu correo electrónico" required>
-        <input type="text" name="telefono" placeholder="Tu número de teléfono" required>
-        <textarea name="mensaje" placeholder="Escribe tu mensaje o consulta" rows="4"></textarea>
+        <input type="tel" name="telefono" placeholder="Tu número de teléfono" required> <textarea name="mensaje" placeholder="Escribe tu mensaje o consulta" rows="4"></textarea>
         <button type="submit">Enviar mensaje</button>
       </form>
     </section>
   </main>
 
-  <!-- FOOTER FINAL -->
-  <footer>
-    <p>&copy; 2025 CLINICA LIMASURE | Síguenos en 
-      <a href="#">Facebook</a>, 
-      <a href="#">Instagram</a>, 
-      <a href="#">Tiktok</a>
-      </p>
+   <footer>
+    <p>&copy; 2025 CLÍNICA LIMASURE | Un proyecto de Antony Celestino Abad y Sergio Mamani Orihuela |
+      Síguenos en
+      <a href="#">Facebook</a>,
+      <a href="#">Instagram</a>,
+      <a href="#">LinkedIn</a>
+    </p>
   </footer>
 </body>
 </html>
