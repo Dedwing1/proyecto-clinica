@@ -34,7 +34,7 @@ body {
   background-color: var(--principal);
   color: var(--secundario);
   padding: 10px 30px;
-  border-bottom: 4px solid #2c3e50;
+  border-bottom: 4px solid #50362c;
 }
 
 /* Contenedor interno con flexbox: logo izquierda, nav derecha */
@@ -47,7 +47,8 @@ body {
 
 /* Logo ajustado para alinearse a la izquierda */
 .logo {
-  width: 90px;
+  border-radius: 10px;
+  width: 110px;
   height: auto;
 }
 
@@ -82,8 +83,8 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding: 6px 10px;
-  border: 1px solid var(--secundario);
-  border-radius: 4px;
+  border: 2px solid var(--secundario);
+  border-radius: 10px;
   transition: 0.3s ease;
 }
 
@@ -366,7 +367,7 @@ h3 + p {
     background-image: url('../IMAGENES/doctor.png'); /* Assuming you extract the subtle pattern */
     background-repeat: no-repeat, no-repeat;
     background-position: left center, right center;
-    background-size: auto 100%, auto 100%; /* Doctor image fills height, pattern fills height */
+    background-size: auto 111%, auto 100%; /* Doctor image fills height, pattern fills height */
 }
 
 .hero-content {
