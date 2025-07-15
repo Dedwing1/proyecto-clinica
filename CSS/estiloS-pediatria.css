@@ -1,0 +1,116 @@
+ #contenido-servicio {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .body-servicios {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #f8f9fa; /* Light background for the body */
+    }
+
+    .titulo-servicio {
+      background-color: #e6f2ff;
+      color: #1a2a5e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .contenido-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .columna-texto {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .columna-texto p,
+    .columna-texto ul {
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: var(--texto);
+      text-align: justify;
+    }
+
+    .columna-texto ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .columna-texto li::before {
+      content: '✅';
+      margin-right: 10px;
+      color: green;
+    }
+
+    .columna-imagen img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .alerta-emergencia {
+      background-color: #f9f9f9;
+      border-left: 5px solid #007bff;
+      padding: 15px 20px;
+      margin-top: 25px;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .btn-llamar {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #dc3545;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .formulario-contacto {
+      background-color: #e6f2ff;
+      margin-top: 40px;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .formulario-contacto h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .formulario-contacto button {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 6px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }

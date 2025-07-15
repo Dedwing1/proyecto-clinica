@@ -5,7 +5,7 @@
     background-color: #f8fbfd; /* Very light, clean background */
 }
 
-#contenido-detalle-servicio {
+.contenido-detalle-servicio {
     max-width: 1300px;
     margin: 30px auto;
     padding: 0 20px;
